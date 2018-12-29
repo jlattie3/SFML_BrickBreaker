@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 2036SkeletonCmake
+# Target rules for targets named BrickBreakerClone
 
 # Build rule for target.
-2036SkeletonCmake: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 2036SkeletonCmake
-.PHONY : 2036SkeletonCmake
+BrickBreakerClone: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BrickBreakerClone
+.PHONY : BrickBreakerClone
 
 # fast build rule for target.
-2036SkeletonCmake/fast:
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/build
-.PHONY : 2036SkeletonCmake/fast
+BrickBreakerClone/fast:
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/build
+.PHONY : BrickBreakerClone/fast
 
 Game.o: Game.cpp.o
 
@@ -129,7 +129,7 @@ Game.o: Game.cpp.o
 
 # target to build an object file
 Game.cpp.o:
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/Game.cpp.o
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/Game.cpp.o
 .PHONY : Game.cpp.o
 
 Game.i: Game.cpp.i
@@ -138,7 +138,7 @@ Game.i: Game.cpp.i
 
 # target to preprocess a source file
 Game.cpp.i:
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/Game.cpp.i
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/Game.cpp.i
 .PHONY : Game.cpp.i
 
 Game.s: Game.cpp.s
@@ -147,7 +147,7 @@ Game.s: Game.cpp.s
 
 # target to generate assembly for a file
 Game.cpp.s:
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/Game.cpp.s
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
 Platform.o: Platform.cpp.o
@@ -156,7 +156,7 @@ Platform.o: Platform.cpp.o
 
 # target to build an object file
 Platform.cpp.o:
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/Platform.cpp.o
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/Platform.cpp.o
 .PHONY : Platform.cpp.o
 
 Platform.i: Platform.cpp.i
@@ -165,7 +165,7 @@ Platform.i: Platform.cpp.i
 
 # target to preprocess a source file
 Platform.cpp.i:
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/Platform.cpp.i
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/Platform.cpp.i
 .PHONY : Platform.cpp.i
 
 Platform.s: Platform.cpp.s
@@ -174,7 +174,7 @@ Platform.s: Platform.cpp.s
 
 # target to generate assembly for a file
 Platform.cpp.s:
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/Platform.cpp.s
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/Platform.cpp.s
 .PHONY : Platform.cpp.s
 
 main.o: main.cpp.o
@@ -183,7 +183,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -192,7 +192,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -201,7 +201,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -212,7 +212,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... 2036SkeletonCmake"
+	@echo "... BrickBreakerClone"
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"

@@ -65,39 +65,39 @@ CMAKE_SOURCE_DIR = /Users/jacoblattie/Desktop/Git/BrickBreaker/BrickBreakerClone
 CMAKE_BINARY_DIR = /Users/jacoblattie/Desktop/Git/BrickBreaker/BrickBreakerClone/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/2036SkeletonCmake.dir
+# Target rules for target CMakeFiles/BrickBreakerClone.dir
 
 # All Build rule for target.
-CMakeFiles/2036SkeletonCmake.dir/all:
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/depend
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jacoblattie/Desktop/Git/BrickBreaker/BrickBreakerClone/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target 2036SkeletonCmake"
-.PHONY : CMakeFiles/2036SkeletonCmake.dir/all
+CMakeFiles/BrickBreakerClone.dir/all:
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/depend
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jacoblattie/Desktop/Git/BrickBreaker/BrickBreakerClone/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target BrickBreakerClone"
+.PHONY : CMakeFiles/BrickBreakerClone.dir/all
 
 # Include target in all.
-all: CMakeFiles/2036SkeletonCmake.dir/all
+all: CMakeFiles/BrickBreakerClone.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/2036SkeletonCmake.dir/rule: cmake_check_build_system
+CMakeFiles/BrickBreakerClone.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacoblattie/Desktop/Git/BrickBreaker/BrickBreakerClone/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/2036SkeletonCmake.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/BrickBreakerClone.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jacoblattie/Desktop/Git/BrickBreaker/BrickBreakerClone/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/2036SkeletonCmake.dir/rule
+.PHONY : CMakeFiles/BrickBreakerClone.dir/rule
 
 # Convenience name for target.
-2036SkeletonCmake: CMakeFiles/2036SkeletonCmake.dir/rule
+BrickBreakerClone: CMakeFiles/BrickBreakerClone.dir/rule
 
-.PHONY : 2036SkeletonCmake
-
-# clean rule for target.
-CMakeFiles/2036SkeletonCmake.dir/clean:
-	$(MAKE) -f CMakeFiles/2036SkeletonCmake.dir/build.make CMakeFiles/2036SkeletonCmake.dir/clean
-.PHONY : CMakeFiles/2036SkeletonCmake.dir/clean
+.PHONY : BrickBreakerClone
 
 # clean rule for target.
-clean: CMakeFiles/2036SkeletonCmake.dir/clean
+CMakeFiles/BrickBreakerClone.dir/clean:
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/clean
+.PHONY : CMakeFiles/BrickBreakerClone.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/BrickBreakerClone.dir/clean
 
 .PHONY : clean
 

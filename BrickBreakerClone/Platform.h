@@ -26,8 +26,11 @@ public:
 
 	virtual void setScale(float scale);
 
+	virtual void checkBounds();
+
 private:
 	sf::Sprite m_sprite;
+	sf::IntRect m_rectangle;
 	sf::Texture m_texture;
 	std::string m_filename;
 	bool m_valid = false;

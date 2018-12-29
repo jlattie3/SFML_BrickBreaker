@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-project(2036SkeletonCmake)
+project(BrickBreakerClone)
 set(CMAKE_CXX_STANDARD 14)
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/;${CMAKE_MODULE_PATH}")
@@ -20,5 +20,5 @@ set(SOURCE_FILES
         Platform.h
         )
 
-add_executable(2036SkeletonCmake ${SOURCE_FILES})
+add_executable(BrickBreakerClone ${SOURCE_FILES})
 target_link_libraries(${PROJECT_NAME} ${SFML_LIBRARIES})

@@ -12,6 +12,8 @@ bool Platform::load(const std::string& filename) {
 	if (m_texture.loadFromFile(filename)) {
 		m_filename = filename;
 		m_sprite.setTexture(m_texture);
+        sf::IntRect rectSourceSprite(0, 54, 64, 10);
+        m_sprite.setTextureRect(rectSourceSprite);
 		m_valid = true;
 		return true;
 	}
@@ -51,4 +53,15 @@ float Platform::getWidth() const {
 void Platform::setScale(float scale) {
 	if (m_valid)
 		m_sprite.setScale(scale, scale);
+}
+
+void Platform::checkBounds() {
+	float diff = m_sprite.getGlobalBounds().left;
+	if (diff < 0) {
+		m_sprite.move(-diff, 0);
+	}
+	diff = m_sprite.getGlobalBounds().left + m_sprite.getLocalBounds().width - 896;
+	if (diff > 0) {
+		m_sprite.move(-diff, 0);
+	}
 }

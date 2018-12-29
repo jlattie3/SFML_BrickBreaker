@@ -20,6 +20,12 @@
 //Value Computed by CMake
 2036SkeletonCmake_SOURCE_DIR:STATIC=/Users/jacoblattie/Desktop/Git/BrickBreaker/BrickBreakerClone
 
+//Value Computed by CMake
+BrickBreakerClone_BINARY_DIR:STATIC=/Users/jacoblattie/Desktop/Git/BrickBreaker/BrickBreakerClone/cmake-build-debug
+
+//Value Computed by CMake
+BrickBreakerClone_SOURCE_DIR:STATIC=/Users/jacoblattie/Desktop/Git/BrickBreaker/BrickBreakerClone
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 
@@ -148,7 +154,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=2036SkeletonCmake
+CMAKE_PROJECT_NAME:STATIC=BrickBreakerClone
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib

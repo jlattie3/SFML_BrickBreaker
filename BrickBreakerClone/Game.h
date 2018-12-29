@@ -27,7 +27,7 @@ private:
 	Platform m_platform;
 
 	//TODO::these should be moved to game object
-	float m_speed = 120.0f;
+	float m_speed = 370.0f;
 	bool m_left = false;
 	bool m_right = false;
 	bool m_up = false;

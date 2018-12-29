@@ -9,9 +9,9 @@ Game::Game() :
 {
 	//load the player
 	m_platform.load("/Users/jacoblattie/Desktop/Git/BrickBreaker/BrickBreakerClone/build/content/Platform.png");
-
 	//size him.  trial and error to get correct values
 	m_platform.setScale(2.0f);
+	m_platform.setPosition(0.0f, 700.0f);
 
 }
 
@@ -50,10 +50,10 @@ void Game::handlePlayerInput(sf::Keyboard::Key key, bool isDown) {
 		m_left = isDown;
 	if (key == sf::Keyboard::Right)
 		m_right = isDown;
-	if (key == sf::Keyboard::Up)
-		m_up = isDown;
-	if (key == sf::Keyboard::Down)
-		m_down = isDown;
+//	if (key == sf::Keyboard::Up)
+//		m_up = isDown;
+//	if (key == sf::Keyboard::Down)
+//		m_down = isDown;
 }
 
 //use time since last update to get smooth movement
@@ -68,7 +68,7 @@ void Game::update(sf::Time deltaT) {
 		movement.x -= m_speed;
 	if (m_right)
 		movement.x += m_speed;
-
+    m_platform.checkBounds();
 	m_platform.move(movement * deltaT.asSeconds());
 
 }
