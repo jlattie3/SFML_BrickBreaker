@@ -65,3 +65,7 @@ void Platform::checkBounds() {
 		m_sprite.move(-diff, 0);
 	}
 }
+
+float Platform::getSpeed() {
+    return m_speed;
+}

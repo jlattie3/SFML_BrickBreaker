@@ -123,6 +123,33 @@ BrickBreakerClone/fast:
 	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/build
 .PHONY : BrickBreakerClone/fast
 
+Ball.o: Ball.cpp.o
+
+.PHONY : Ball.o
+
+# target to build an object file
+Ball.cpp.o:
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/Ball.cpp.o
+.PHONY : Ball.cpp.o
+
+Ball.i: Ball.cpp.i
+
+.PHONY : Ball.i
+
+# target to preprocess a source file
+Ball.cpp.i:
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/Ball.cpp.i
+.PHONY : Ball.cpp.i
+
+Ball.s: Ball.cpp.s
+
+.PHONY : Ball.s
+
+# target to generate assembly for a file
+Ball.cpp.s:
+	$(MAKE) -f CMakeFiles/BrickBreakerClone.dir/build.make CMakeFiles/BrickBreakerClone.dir/Ball.cpp.s
+.PHONY : Ball.cpp.s
+
 Game.o: Game.cpp.o
 
 .PHONY : Game.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... BrickBreakerClone"
+	@echo "... Ball.o"
+	@echo "... Ball.i"
+	@echo "... Ball.s"
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"

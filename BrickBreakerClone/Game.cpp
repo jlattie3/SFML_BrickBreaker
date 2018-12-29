@@ -7,11 +7,14 @@
 Game::Game() :
 	m_window(sf::VideoMode(960, 720), "Brick Breaker")
 {
-	//load the player
+	//load the platform
 	m_platform.load("/Users/jacoblattie/Desktop/Git/BrickBreaker/BrickBreakerClone/build/content/Platform.png");
-	//size him.  trial and error to get correct values
 	m_platform.setScale(2.0f);
-	m_platform.setPosition(0.0f, 700.0f);
+	m_platform.setPosition(400.0f, 700.0f);
+	// load the ball
+	m_ball.load("/Users/jacoblattie/Desktop/Git/BrickBreaker/BrickBreakerClone/build/content/Ball.png");
+	m_ball.setScale(1.0f);
+    m_ball.setPosition(450.0f, 10.0f);
 
 }
 
@@ -50,26 +53,31 @@ void Game::handlePlayerInput(sf::Keyboard::Key key, bool isDown) {
 		m_left = isDown;
 	if (key == sf::Keyboard::Right)
 		m_right = isDown;
-//	if (key == sf::Keyboard::Up)
-//		m_up = isDown;
-//	if (key == sf::Keyboard::Down)
-//		m_down = isDown;
 }
 
 //use time since last update to get smooth movement
 void Game::update(sf::Time deltaT) {
-	//Look a vector class!
-	sf::Vector2f movement(0.0f, 0.0f);
+	// Platform update
+	sf::Vector2f plat_movement(0.0f, 0.0f);
 	if (m_up)
-		movement.y -= m_speed;
+		plat_movement.y -= m_platform.getSpeed();
 	if (m_down)
-		movement.y += m_speed;
+		plat_movement.y += m_platform.getSpeed();
 	if (m_left)
-		movement.x -= m_speed;
+		plat_movement.x -= m_platform.getSpeed();
 	if (m_right)
-		movement.x += m_speed;
+		plat_movement.x += m_platform.getSpeed();
     m_platform.checkBounds();
-	m_platform.move(movement * deltaT.asSeconds());
+	m_platform.move(plat_movement * deltaT.asSeconds());
+
+	// Ball update
+	float ball_radius = 12.5f;
+	const sf::Time update_ms = sf::seconds(1.f);
+	const auto pos = m_ball.getPosition();
+	const auto delta = deltaT.asSeconds() * m_ball.getVelocity();
+	sf::Vector2f new_pos(pos.x + m_ball.getDirection().x * delta, pos.y + m_ball.getDirection().y * delta);
+	m_ball.setPosition(new_pos.x, new_pos.y);
+	m_ball.checkBounds();
 
 }
 
@@ -77,6 +85,7 @@ void Game::render() {
 	m_window.clear();
 
 	m_platform.draw(m_window);
+	m_ball.draw(m_window);
 
 	m_window.display();
 }

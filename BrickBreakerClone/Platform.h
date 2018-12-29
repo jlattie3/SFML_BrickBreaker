@@ -28,12 +28,15 @@ public:
 
 	virtual void checkBounds();
 
+	virtual float getSpeed();
+
 private:
 	sf::Sprite m_sprite;
 	sf::IntRect m_rectangle;
 	sf::Texture m_texture;
 	std::string m_filename;
 	bool m_valid = false;
+	float m_speed = 370.0f;
 
 };
 

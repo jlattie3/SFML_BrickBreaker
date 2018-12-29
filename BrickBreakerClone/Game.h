@@ -5,6 +5,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "Platform.h"
+#include "Ball.h"
 
 class Game {
 public:
@@ -23,11 +24,11 @@ private:
 	void handlePlayerInput(sf::Keyboard::Key key, bool isDown);
 
 	sf::RenderWindow m_window;
-
 	Platform m_platform;
+	Ball m_ball;
 
 	//TODO::these should be moved to game object
-	float m_speed = 370.0f;
+//	float m_speed = 370.0f;
 	bool m_left = false;
 	bool m_right = false;
 	bool m_up = false;
