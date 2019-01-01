@@ -119,7 +119,7 @@ void Ball::bounce(sf::Time deltaT, sf::Rect<float> brickRect) {
     const auto delta = deltaT.asSeconds() * m_velocity;
     sf::Vector2f new_pos(pos.x + m_direction.x * delta, pos.y + m_direction.y * delta);
 
-    if (new_pos.x - ball_radius < 0) { // left brick edge
+    if ((new_pos.x - ball_radius > brickRect.left) && (new_pos.y - ball_radius > brickRect.top && new_pos.y - ball_radius < brickRect.top + brickRect.width)) { // left brick edge
         m_direction.x *= -1;
         new_pos.x = 0 + ball_radius;
     } else if (new_pos.x + ball_radius >= 940) { // right brick edge
