@@ -6,6 +6,7 @@
 #include <SFML/Graphics.hpp>
 #include "Platform.h"
 #include "Ball.h"
+#include "Brick.h"
 
 class Game {
 public:
@@ -26,12 +27,10 @@ private:
 	sf::RenderWindow m_window;
 	Platform m_platform;
 	Ball m_ball;
+	Brick m_brick;
+	std::vector<Brick*> m_bricks;
 
-	//TODO::these should be moved to game object
-//	float m_speed = 370.0f;
 	bool m_left = false;
 	bool m_right = false;
-	bool m_up = false;
-	bool m_down = false;
 };
 

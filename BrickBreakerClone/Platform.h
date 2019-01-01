@@ -36,7 +36,7 @@ private:
 	sf::Texture m_texture;
 	std::string m_filename;
 	bool m_valid = false;
-	float m_speed = 370.0f;
+	float m_speed = 470.0f;
 
 };
 

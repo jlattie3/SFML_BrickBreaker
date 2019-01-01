@@ -18,7 +18,7 @@ set(SOURCE_FILES
         Game.h
         Platform.cpp
         Platform.h
-        Ball.cpp Ball.h)
+        Ball.cpp Ball.h Brick.cpp Brick.h)
 
 add_executable(BrickBreakerClone ${SOURCE_FILES})
 target_link_libraries(${PROJECT_NAME} ${SFML_LIBRARIES})
